@@ -4809,7 +4809,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="OSCIN" class="0">
 <segment>
 <pinref part="Y1" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="83.82" x2="180.34" y2="86.36" width="0.1524" layer="91"/>
@@ -4818,9 +4818,17 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="86.36" x2="172.72" y2="86.36" width="0.1524" layer="91"/>
 <junction x="180.34" y="86.36"/>
+<wire x1="172.72" y1="86.36" x2="154.94" y2="86.36" width="0.1524" layer="91"/>
+<junction x="172.72" y="86.36"/>
+<label x="154.94" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="PORTD/OSC" pin="PD0/OSC&lt;="/>
+<wire x1="137.16" y1="81.28" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
+<label x="142.24" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="OSCOUT" class="0">
 <segment>
 <pinref part="Y1" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -4829,6 +4837,14 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="76.2" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
 <junction x="180.34" y="76.2"/>
+<wire x1="172.72" y1="76.2" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
+<junction x="172.72" y="76.2"/>
+<label x="154.94" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="PORTD/OSC" pin="PD1/OSC=&gt;"/>
+<wire x1="137.16" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
+<label x="142.24" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
