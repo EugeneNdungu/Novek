@@ -6839,6 +6839,7 @@ supports low-cost unregulated adapters.</description>
 <part name="SUPPLY24" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY25" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
+<part name="FRAME3" library="frames" deviceset="A4L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7308,6 +7309,34 @@ supports low-cost unregulated adapters.</description>
 <label x="45" y="47" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="IC1" gate="PORTB_L" pin="PB7"/>
+<wire x1="137.16" y1="114.3" x2="143" y2="114.3" width="0.1524" layer="91"/>
+<label x="143" y="115" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="IC1" gate="PORTB_L" pin="PB6"/>
+<wire x1="137.16" y1="116.84" x2="143" y2="116.84" width="0.1524" layer="91"/>
+<label x="143" y="117" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="INTRPT_MAX" class="0">
+<segment>
+<pinref part="IC1" gate="PORTB_L" pin="PB4"/>
+<wire x1="137.16" y1="121.92" x2="143" y2="121.92" width="0.1524" layer="91"/>
+<label x="143" y="122" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CHG_STATUS" class="0">
+<segment>
+<pinref part="IC1" gate="PORTA_H" pin="PA15"/>
+<wire x1="101.6" y1="88.9" x2="91" y2="88.9" width="0.1524" layer="91"/>
+<label x="84" y="89" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -7605,6 +7634,22 @@ supports low-cost unregulated adapters.</description>
 <label x="229" y="68" size="1.778" layer="95"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+<text x="217.17" y="20" size="2.54" layer="94">Sensors + Transducers</text>
+</plain>
+<instances>
+<instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
