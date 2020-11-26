@@ -5583,9 +5583,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="171.5014" y="77.19" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="176.302" y="77.19" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="JP1" gate="A" x="187.96" y="124.46" smashed="yes" rot="MR0">
-<attribute name="NAME" x="194.31" y="132.715" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="194.31" y="116.84" size="1.778" layer="96" rot="MR0"/>
+<instance part="JP1" gate="A" x="31.96" y="125.46" smashed="yes" rot="MR0">
+<attribute name="NAME" x="38.31" y="133.715" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="38.31" y="117.84" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="C3" gate="G$1" x="69" y="75" smashed="yes">
 <attribute name="NAME" x="70.524" y="77.921" size="1.778" layer="95" font="vector"/>
@@ -5806,7 +5806,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="161" y1="62" x2="161" y2="59.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="RESET" class="0">
+<segment>
+<pinref part="IC1" gate="RESET" pin="NRST"/>
+<wire x1="137.16" y1="53.34" x2="143" y2="53.34" width="0.1524" layer="91"/>
+<label x="143" y="54" size="1.778" layer="95"/>
+</segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="C7" gate="G$1" pin="2"/>
@@ -5816,12 +5821,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="170" y1="45.54" x2="170" y2="45.08" width="0.1524" layer="91"/>
 <junction x="161" y="45.54"/>
 <wire x1="161" y1="45.54" x2="152" y2="45.54" width="0.1524" layer="91"/>
+<label x="152" y="46" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="SWDCLK" class="0">
 <segment>
-<pinref part="IC1" gate="RESET" pin="NRST"/>
-<wire x1="137.16" y1="53.34" x2="143" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="PORTA_H" pin="PA14"/>
+<wire x1="101.6" y1="91.44" x2="91" y2="91.44" width="0.1524" layer="91"/>
+<label x="91" y="92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SWDIO" class="0">
+<segment>
+<pinref part="IC1" gate="PORTA_H" pin="PA13"/>
+<wire x1="101.6" y1="93.98" x2="91" y2="93.98" width="0.1524" layer="91"/>
+<label x="91" y="94" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

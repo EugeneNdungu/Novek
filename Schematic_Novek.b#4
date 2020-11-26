@@ -1906,6 +1906,9 @@ design rules under a new name.</description>
 <wire x1="3.39" y1="-64.77" x2="2.13" y2="-69.85" width="0" layer="19" extent="1-1"/>
 <wire x1="1.69" y1="-60.96" x2="3.39" y2="-64.77" width="0" layer="19" extent="1-1"/>
 </signal>
+<signal name="N$2">
+<contactref element="IC1" pad="7"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>

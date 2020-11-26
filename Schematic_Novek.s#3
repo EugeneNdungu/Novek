@@ -5583,9 +5583,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="171.5014" y="77.19" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="176.302" y="77.19" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="JP1" gate="A" x="31.96" y="125.46" smashed="yes" rot="MR0">
-<attribute name="NAME" x="38.31" y="133.715" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="38.31" y="117.84" size="1.778" layer="96" rot="MR0"/>
+<instance part="JP1" gate="A" x="29.96" y="96.46" smashed="yes" rot="MR0">
+<attribute name="NAME" x="36.31" y="104.715" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="36.31" y="88.84" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="C3" gate="G$1" x="69" y="75" smashed="yes">
 <attribute name="NAME" x="70.524" y="77.921" size="1.778" layer="95" font="vector"/>
@@ -5836,6 +5836,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="IC1" gate="PORTA_H" pin="PA13"/>
 <wire x1="101.6" y1="93.98" x2="91" y2="93.98" width="0.1524" layer="91"/>
 <label x="91" y="94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="32.5" y1="101.54" x2="44" y2="101.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="32.5" y1="99" x2="44" y2="99" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="32.5" y1="96.46" x2="44" y2="96.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="4"/>
+<wire x1="32.5" y1="93.92" x2="44" y2="93.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
