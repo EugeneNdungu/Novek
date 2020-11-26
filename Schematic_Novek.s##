@@ -5499,6 +5499,135 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
+<deviceset name="1KOHM" prefix="R">
+<description>&lt;h3&gt;1kΩ resistor&lt;/h3&gt;
+&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-HORIZ-1/4W-1%" package="AXIAL-0.3">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12182"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT-1/4W-1%" package="AXIAL-0.1">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12182"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT_KIT-1/4W-1%" package="AXIAL-0.1-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12182"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ_KIT-1/4W-1%" package="AXIAL-0.3-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12182"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT-1/4W-5%" package="AXIAL-0.1">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08380"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT_KIT-1/4W-5%" package="AXIAL-0.1-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08380"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ-1/4W-5%" package="AXIAL-0.3">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08380"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ_KIT-1/4W-5%" package="AXIAL-0.3-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08380"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT-1/6W-5%" package="AXIAL-0.1">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09769"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-1/10W-1%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-07856"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="adafruit">
@@ -6385,6 +6514,13 @@ supports low-cost unregulated adapters.</description>
 <part name="C9" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="U1" library="bq21040" deviceset="BQ21040" device=""/>
+<part name="R5" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
+<part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY18" library="supply2" deviceset="GND" device=""/>
+<part name="R6" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
+<part name="SUPPLY19" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="R7" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
+<part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6873,16 +7009,40 @@ supports low-cost unregulated adapters.</description>
 <instance part="SUPPLY15" gate="GND" x="52" y="89" smashed="yes">
 <attribute name="VALUE" x="50.095" y="85.825" size="1.778" layer="96"/>
 </instance>
-<instance part="C9" gate="G$1" x="70" y="100" smashed="yes" rot="R180">
-<attribute name="NAME" x="68.476" y="97.079" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="68.476" y="102.159" size="1.778" layer="96" font="vector" rot="R180"/>
+<instance part="C9" gate="G$1" x="74" y="101" smashed="yes" rot="R180">
+<attribute name="NAME" x="72.476" y="98.079" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="72.476" y="103.159" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
-<instance part="SUPPLY16" gate="GND" x="70" y="89" smashed="yes">
-<attribute name="VALUE" x="68.095" y="85.825" size="1.778" layer="96"/>
+<instance part="SUPPLY16" gate="GND" x="74" y="90" smashed="yes">
+<attribute name="VALUE" x="72.095" y="86.825" size="1.778" layer="96"/>
 </instance>
-<instance part="U1" gate="G$1" x="93" y="97" smashed="yes">
-<attribute name="NAME" x="85.38" y="109.7" size="2.54" layer="95"/>
-<attribute name="VALUE" x="85.38" y="81.76" size="2.54" layer="96"/>
+<instance part="U1" gate="G$1" x="107" y="98" smashed="yes">
+<attribute name="NAME" x="99.38" y="110.7" size="2.54" layer="95"/>
+<attribute name="VALUE" x="99.38" y="82.76" size="2.54" layer="96"/>
+</instance>
+<instance part="R5" gate="G$1" x="81" y="92" smashed="yes" rot="R90">
+<attribute name="NAME" x="79.476" y="92" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="82.524" y="92" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="SUPPLY17" gate="GND" x="81" y="82" smashed="yes">
+<attribute name="VALUE" x="79.095" y="78.825" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY18" gate="GND" x="89" y="82" smashed="yes">
+<attribute name="VALUE" x="87.095" y="78.825" size="1.778" layer="96"/>
+</instance>
+<instance part="R6" gate="G$1" x="129" y="85" smashed="yes" rot="R90">
+<attribute name="NAME" x="127.476" y="85" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="130.524" y="85" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="SUPPLY19" gate="G$1" x="129" y="77" smashed="yes" rot="R180">
+<attribute name="VALUE" x="129" y="74.206" size="1.778" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="R7" gate="G$1" x="129" y="98" smashed="yes">
+<attribute name="NAME" x="129" y="99.524" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="129" y="96.476" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="SUPPLY20" gate="GND" x="135" y="82" smashed="yes">
+<attribute name="VALUE" x="133.095" y="78.825" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -6904,7 +7064,26 @@ supports low-cost unregulated adapters.</description>
 <segment>
 <pinref part="SUPPLY16" gate="GND" pin="GND"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="70" y1="91.54" x2="70" y2="94.92" width="0.1524" layer="91"/>
+<wire x1="74" y1="92.54" x2="74" y2="95.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="81" y1="86.92" x2="81" y2="84.54" width="0.1524" layer="91"/>
+<pinref part="SUPPLY17" gate="GND" pin="GND"/>
+<wire x1="81" y1="84.54" x2="81" y2="84" width="0.1524" layer="91"/>
+<junction x="81" y="84.54"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY18" gate="GND" pin="GND"/>
+<wire x1="91.76" y1="90.38" x2="89" y2="90.38" width="0.1524" layer="91"/>
+<wire x1="89" y1="90.38" x2="89" y2="84.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="SUPPLY20" gate="GND" pin="GND"/>
+<wire x1="134.08" y1="98" x2="135" y2="98" width="0.1524" layer="91"/>
+<wire x1="135" y1="98" x2="135" y2="84.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -6915,12 +7094,52 @@ supports low-cost unregulated adapters.</description>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VIN"/>
-<wire x1="77.76" y1="104.62" x2="66" y2="104.62" width="0.1524" layer="91"/>
+<wire x1="91.76" y1="105.62" x2="70" y2="105.62" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="70" y1="102.54" x2="70" y2="104.62" width="0.1524" layer="91"/>
-<wire x1="70" y1="104.62" x2="77.76" y2="104.62" width="0.1524" layer="91"/>
-<junction x="77.76" y="104.62"/>
-<label x="66" y="105" size="1.778" layer="95"/>
+<wire x1="74" y1="103.54" x2="74" y2="105.62" width="0.1524" layer="91"/>
+<wire x1="74" y1="105.62" x2="91.76" y2="105.62" width="0.1524" layer="91"/>
+<junction x="91.76" y="105.62"/>
+<label x="70" y="106" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="ISET"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="91.76" y1="98" x2="81" y2="98" width="0.1524" layer="91"/>
+<wire x1="81" y1="98" x2="81" y2="97.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="SUPPLY19" gate="G$1" pin="3.3V"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="129" y1="77" x2="129" y2="79.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CHG_STATUS" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="!CHG!"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="122.24" y1="90.38" x2="129" y2="90.38" width="0.1524" layer="91"/>
+<wire x1="129" y1="90.38" x2="129" y2="90.08" width="0.1524" layer="91"/>
+<wire x1="122.24" y1="90.38" x2="138" y2="90.38" width="0.1524" layer="91"/>
+<junction x="122.24" y="90.38"/>
+<label x="138" y="91" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="TS"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="122.24" y1="98" x2="123.92" y2="98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VBATT" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VOUT"/>
+<wire x1="122.24" y1="105.62" x2="138" y2="105.62" width="0.1524" layer="91"/>
+<label x="138" y="106" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
